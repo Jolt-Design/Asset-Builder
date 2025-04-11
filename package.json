@@ -1,6 +1,6 @@
 {
-  "name": "asset-builder",
-  "version": "2.0.1",
+  "name": "@joltdesign/asset-builder",
+  "version": "3.0.0",
   "description": "assembles and orchestrates your dependencies so you can run them through your asset pipeline.",
   "main": "index.js",
   "scripts": {
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/austinpray/asset-builder.git"
+    "url": "git+https://github.com/Jolt-Design/Asset-Builder.git"
   },
   "author": "Austin Pray <austin@austinpray.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/austinpray/asset-builder/issues"
+    "url": "https://github.com/Jolt-Design/Asset-Builder/issues"
   },
-  "homepage": "https://github.com/austinpray/asset-builder",
+  "homepage": "https://github.com/Jolt-Design/Asset-Builder",
   "devDependencies": {
     "chai": "*",
     "coveralls": "^3.0.2",
