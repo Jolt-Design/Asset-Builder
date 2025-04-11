@@ -31,6 +31,10 @@ function normalizeAll(files) {
 }
 
 function bowerSetup(bowerJson) {
+  if (!bower) {
+    return Q.resolve();
+  }
+
   bowerJson = bowerJson || 'bower.json';
   var deferred = Q.defer();
   fs.writeFileSync('test/tmp/bower.json', fs.readFileSync('test/fixtures/'+bowerJson));
@@ -364,14 +368,20 @@ describe('Integration Tests', function () {
         // jquery.js
         assert.equal(output.globs.js[1].type, 'js');
         assert.equal(output.globs.js[1].name, 'jquery.js');
-        assert.lengthOf(output.globs.js[1].globs, 1);
-        assert.include(output.globs.js[1].globs[0], 'jquery.js');
+
+        if (bower) {
+          assert.lengthOf(output.globs.js[1].globs, 1);
+          assert.include(output.globs.js[1].globs[0], 'jquery.js');
+        }
 
         // modernizr.js
         assert.equal(output.globs.js[2].type, 'js');
         assert.equal(output.globs.js[2].name, 'modernizr.js');
-        assert.lengthOf(output.globs.js[2].globs, 1);
-        assert.include(output.globs.js[2].globs[0], 'modernizr.js');
+
+        if (bower) {
+          assert.lengthOf(output.globs.js[2].globs, 1);
+          assert.include(output.globs.js[2].globs[0], 'modernizr.js');
+        }
 
         // has images
         assert.sameMembers(output.globs.images, [
