@@ -9,11 +9,20 @@ var readManifest    = require('../lib/readManifest');
 var processManifest = require('../lib/processManifest');
 var buildGlobs      = require('../lib/buildGlobs');
 var Dependency      = require('../lib/Dependency');
-var bower           = require('bower');
 var Q               = require('q');
 var mkdirp          = require('mkdirp');
 var _               = require('lodash');
 var path            = require('path');
+
+var bower = null;
+
+try {
+  bower = require('bower');
+} catch (e) {
+  if (!e instanceof Error || e.code !== "MODULE_NOT_FOUND") {
+    throw e;
+  }
+}
 
 function normalizeAll(files) {
   return _.map(files, function(f) {
