@@ -10,7 +10,7 @@ var processManifest = require('../lib/processManifest');
 var buildGlobs      = require('../lib/buildGlobs');
 var Dependency      = require('../lib/Dependency');
 var Q               = require('q');
-var mkdirp          = require('mkdirp');
+var { mkdirp }      = require('mkdirp');
 var _               = require('lodash');
 var path            = require('path');
 
@@ -331,7 +331,7 @@ describe('Integration Tests', function () {
   describe('manifests', function () {
     beforeEach(function(done) {
       this.timeout(30e3);
-      mkdirp('test/tmp', function () {
+      mkdirp('test/tmp').then(function () {
         bowerSetup().then(function () {
           done();
         });
