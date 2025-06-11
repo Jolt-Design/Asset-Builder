@@ -32,6 +32,6 @@
     "traverse": "^0.6.11"
   },
   "overrides": {
-    "brace-expansion": "4.0.0"
+    "brace-expansion": "4.0.1"
   }
 }
