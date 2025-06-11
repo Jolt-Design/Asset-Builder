@@ -4,11 +4,6 @@
   "description": "assembles and orchestrates your dependencies so you can run them through your asset pipeline.",
   "main": "index.js",
   "scripts": {
-    "coverage": "istanbul cover _mocha -- -R spec test",
-    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "docco": "docco -o site/docco lib/*.js index.js",
-    "documentation": "npm run jsdoc && npm run docco",
-    "jsdoc": "jsdoc -c jsdoc.json",
     "jshint": "jshint lib/*.js index.js",
     "jscs": "jscs lib/*.js index.js",
     "test": "mocha test"
@@ -25,10 +20,6 @@
   "homepage": "https://github.com/Jolt-Design/Asset-Builder",
   "devDependencies": {
     "chai": "5.2.0",
-    "coveralls": "^3.1.1",
-    "docco": "^0.9.2",
-    "istanbul": "^0.4.5",
-    "jsdoc": "^4.0.4",
     "jshint": "^2.13.6",
     "mkdirp": "^3.0.1",
     "mocha": "^11.6.0",
