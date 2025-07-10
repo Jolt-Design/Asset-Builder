@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Jolt-Design/Asset-Builder",
   "devDependencies": {
-    "chai": "5.2.0",
+    "chai": "5.2.1",
     "jshint": "^2.13.6",
     "mkdirp": "^3.0.1",
     "mocha": "^11.6.0",
