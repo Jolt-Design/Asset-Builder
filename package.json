@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "minimatch": "^10.0.0",
+    "minimatch": "^10.0.3",
     "object-path": "^0.11.8",
     "traverse": "^0.6.11"
   }
