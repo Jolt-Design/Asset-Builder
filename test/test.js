@@ -16,7 +16,7 @@ var bower = null;
 try {
   bower = require('bower');
 } catch (e) {
-  if ((!e) instanceof Error || e.code !== 'MODULE_NOT_FOUND') {
+  if (!(e instanceof Error) || e.code !== 'MODULE_NOT_FOUND') {
     throw e;
   }
 }
