@@ -1,7 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>Jolt-Design/Renovate-Config"
-  ],
+  "extends": ["github>Jolt-Design/Renovate-Config"],
   "includeForks": true
 }

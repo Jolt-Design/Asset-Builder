@@ -4,8 +4,7 @@
   "description": "assembles and orchestrates your dependencies so you can run them through your asset pipeline.",
   "main": "index.js",
   "scripts": {
-    "jshint": "jshint lib/*.js index.js",
-    "jscs": "jscs lib/*.js index.js",
+    "lint": "biome check",
     "test": "mocha test"
   },
   "repository": {
@@ -19,8 +18,8 @@
   },
   "homepage": "https://github.com/Jolt-Design/Asset-Builder",
   "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
     "chai": "5.2.1",
-    "jshint": "^2.13.6",
     "mkdirp": "^3.0.1",
     "mocha": "^11.7.1",
     "q": "^1.5.1"

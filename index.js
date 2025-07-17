@@ -1,5 +1,3 @@
-'use strict';
-
 var Manifest = require('./lib/Manifest.js');
 
 /**
@@ -10,9 +8,7 @@ var Manifest = require('./lib/Manifest.js');
  * @param {Object} options
  * @return {Manifest}
  */
-module.exports = function(path, options) {
-  return new Manifest(path, options);
-};
+module.exports = (path, options) => new Manifest(path, options);
 
 /**
  * The Manifest constructor

@@ -1,6 +1,6 @@
 {
   "source": {
-    "include": [ "lib/", "index.js" ]
+    "include": ["lib/", "index.js"]
   },
   "plugins": [],
   "opts": {
