@@ -31,3 +31,13 @@ test/tmp/
 
 site/*
 !site/index.html
+
+### Yarn gitignore ###
+node_modules
+.yarn/*
+.pnp.*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
