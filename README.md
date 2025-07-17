@@ -1,17 +1,16 @@
-[asset-builder](http://use-asset-builder.austinpray.com)
+[asset-builder](https://github.com/Jolt-Design/Asset-Builder/)
 =============
 
-![Project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)
-[![Build Status](https://travis-ci.org/austinpray/asset-builder.svg?branch=master)](https://travis-ci.org/austinpray/asset-builder) [![Build status](https://ci.appveyor.com/api/projects/status/grdwl6vflm7l68i6?svg=true)](https://ci.appveyor.com/project/austinpray/asset-builder) [![Coverage Status](https://img.shields.io/coveralls/austinpray/asset-builder.svg?branch=master&style=flat)](https://coveralls.io/r/austinpray/asset-builder) [![Dependency Status](https://david-dm.org/austinpray/asset-builder.svg)](https://david-dm.org/austinpray/asset-builder) [![Code Climate](https://codeclimate.com/github/austinpray/asset-builder/badges/gpa.svg)](https://codeclimate.com/github/austinpray/asset-builder)
+Fork of [asset-builder](http://use-asset-builder.austinpray.com/) without the Bower requirement.
 
 Assembles and orchestrates your dependencies so you can run them through your asset pipeline. Feed it a [manifest file](help/spec.md) and it will give you globs.
 
-[![NPM](https://nodei.co/npm/asset-builder.png?downloads=true)](https://nodei.co/npm/asset-builder/)
+![NPM](https://nodei.co/npm/@joltdesign/asset-builder.png?downloads=true)
 
 ## Install
 
 ```bash
-npm install asset-builder --save-dev
+npm install @joltdesign/asset-builder --save-dev
 ```
 
 ## Usage
