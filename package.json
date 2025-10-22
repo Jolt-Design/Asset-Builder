@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Jolt-Design/Asset-Builder",
   "devDependencies": {
-    "@biomejs/biome": "^2.2.6",
+    "@biomejs/biome": "^2.2.7",
     "chai": "6.2.0",
     "mkdirp": "^3.0.1",
     "mocha": "^11.7.4",
