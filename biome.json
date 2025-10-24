@@ -32,5 +32,21 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["site/index.html"],
+      "linter": {
+        "rules": {
+          "complexity": {
+            "noArguments": "off",
+            "useArrowFunction": "off"
+          },
+          "suspicious": {
+            "noAssignInExpressions": "off"
+          }
+        }
+      }
+    }
+  ]
 }
