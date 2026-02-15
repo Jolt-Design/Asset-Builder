@@ -12,20 +12,20 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['20.x', '22.x', '24.x', latest]
+        node-version: [20.x, 22.x, 24.x, latest]
 
     steps:
-    - uses: actions/checkout@v6
+      - uses: actions/checkout@v6
 
-    - name: Enable Corepack
-      run: npm install -g corepack
+      - name: Enable Corepack
+        run: npm install -g corepack
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v6
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: yarn
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
 
-    - run: yarn install --immutable
-    - run: yarn run biome ci
-    - run: yarn run test
+      - run: yarn install --immutable
+      - run: yarn run biome ci
+      - run: yarn run test
