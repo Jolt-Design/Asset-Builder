@@ -21,7 +21,7 @@
     "@biomejs/biome": "^2.4.15",
     "chai": "6.2.2",
     "mkdirp": "^3.0.1",
-    "mocha": "^11.7.5",
+    "mocha": "^11.7.6",
     "q": "^1.5.1"
   },
   "dependencies": {
