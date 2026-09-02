@@ -17,14 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Enable Corepack
-        run: npm install -g corepack
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v7.0.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
+
+      - name: Enable Corepack
+        run: npm install -g corepack
 
       - run: corepack yarn install --immutable
       - run: corepack yarn run biome ci
