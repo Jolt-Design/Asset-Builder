@@ -105,7 +105,7 @@ __metadata:
     lodash: "npm:^4.18.1"
     minimatch: "npm:^10.2.6"
     mkdirp: "npm:^3.0.1"
-    mocha: "npm:^12.0.1"
+    mocha: "npm:^12.0.2"
     object-path: "npm:^0.11.8"
     q: "npm:^1.5.1"
     traverse: "npm:^0.6.11"
@@ -446,13 +446,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-up@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "find-up@npm:8.0.0"
-  dependencies:
-    locate-path: "npm:^8.0.0"
-    unicorn-magic: "npm:^0.3.0"
-  checksum: 10c0/4c6d2cb92f74bd42ec7344c881a46f6455010d3993f8f55b09bb64298c0a13e11e10200147624db8938590890a15ade69c40f0172698388d0999899f0f2a70a5
+"find-up-simple@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "find-up-simple@npm:1.0.1"
+  checksum: 10c0/ad34de157b7db925d50ff78302fefb28e309f3bc947c93ffca0f9b0bccf9cf1a2dc57d805d5c94ec9fc60f4838f5dbdfd2a48ecd77c23015fa44c6dd5f60bc40
   languageName: node
   linkType: hard
 
@@ -883,15 +880,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"locate-path@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "locate-path@npm:8.0.0"
-  dependencies:
-    p-locate: "npm:^6.0.0"
-  checksum: 10c0/4c837878b6d1b8557c5d1c624d11d6721d77f4627c14bd84182c85cbb9ec8fc01b5b5f089e21fab17b30fc5ecc14216a3d31f754dfcc5299f1fe9f4c83482fee
-  languageName: node
-  linkType: hard
-
 "lodash@npm:^4.18.1":
   version: 4.18.1
   resolution: "lodash@npm:4.18.1"
@@ -938,15 +926,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mocha@npm:^12.0.1":
-  version: 12.0.1
-  resolution: "mocha@npm:12.0.1"
+"mocha@npm:^12.0.2":
+  version: 12.0.2
+  resolution: "mocha@npm:12.0.2"
   dependencies:
     browser-stdout: "npm:^1.3.1"
     chokidar: "npm:^5.0.0"
     debug: "npm:^4.3.5"
     diff: "npm:^9.0.0"
-    find-up: "npm:^8.0.0"
+    find-up-simple: "npm:^1.0.1"
     glob: "npm:^13.0.0"
     is-path-inside: "npm:^4.0.0"
     is-unicode-supported: "npm:^0.1.0"
@@ -960,7 +948,7 @@ __metadata:
     workerpool: "npm:^10.0.0"
   bin:
     mocha: bin/mocha.js
-  checksum: 10c0/9f31ccef98fc8755499b6113383d526d144fbefbe1d8cb5f0dc328c72bd244361fb6d85631dab94f749e7436bc497885dde39bc5802d05408d88c17a15623935
+  checksum: 10c0/11bf7ff6691b3f287b7e9e1cd35389add5d2ad4c5f6cdd66938fcbaed6caaa63025e341bd5971223c7e3a988dbf505e374ac1628c612ad9c9fb35bd837095c02
   languageName: node
   linkType: hard
 
@@ -1015,24 +1003,6 @@ __metadata:
     object-keys: "npm:^1.1.1"
     safe-push-apply: "npm:^1.0.0"
   checksum: 10c0/84b0d9959475231166c3d4b9abd1b8af8042911e2e5625761eed980d1a1e4381cf52b34d907cae21ee8766c79de943f3cd85eba636149dee5e64cceff3ccdb78
-  languageName: node
-  linkType: hard
-
-"p-limit@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "p-limit@npm:4.0.0"
-  dependencies:
-    yocto-queue: "npm:^1.0.0"
-  checksum: 10c0/a56af34a77f8df2ff61ddfb29431044557fcbcb7642d5a3233143ebba805fc7306ac1d448de724352861cb99de934bc9ab74f0d16fe6a5460bdbdf938de875ad
-  languageName: node
-  linkType: hard
-
-"p-locate@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "p-locate@npm:6.0.0"
-  dependencies:
-    p-limit: "npm:^4.0.0"
-  checksum: 10c0/d72fa2f41adce59c198270aa4d3c832536c87a1806e0f69dffb7c1a7ca998fb053915ca833d90f166a8c082d3859eabfed95f01698a3214c20df6bb8de046312
   languageName: node
   linkType: hard
 
@@ -1387,13 +1357,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unicorn-magic@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "unicorn-magic@npm:0.3.0"
-  checksum: 10c0/0a32a997d6c15f1c2a077a15b1c4ca6f268d574cf5b8975e778bb98e6f8db4ef4e86dfcae4e158cd4c7e38fb4dd383b93b13eefddc7f178dea13d3ac8a603271
-  languageName: node
-  linkType: hard
-
 "which-boxed-primitive@npm:^1.1.0, which-boxed-primitive@npm:^1.1.1":
   version: 1.1.1
   resolution: "which-boxed-primitive@npm:1.1.1"
@@ -1459,12 +1422,5 @@ __metadata:
   version: 10.0.3
   resolution: "workerpool@npm:10.0.3"
   checksum: 10c0/a20a274ac9afc6c329f5b1661914a8ebd160320cfbd816b723b6ef385e41b186ef0bf2d6d82a77556fc33599ce14e40c7fdfd44a2a4daff488257cdd396fa9e9
-  languageName: node
-  linkType: hard
-
-"yocto-queue@npm:^1.0.0":
-  version: 1.2.2
-  resolution: "yocto-queue@npm:1.2.2"
-  checksum: 10c0/36d4793e9cf7060f9da543baf67c55e354f4862c8d3d34de1a1b1d7c382d44171315cc54abf84d8900b8113d742b830108a1434f4898fb244f9b7e8426d4b8f5
   languageName: node
   linkType: hard
