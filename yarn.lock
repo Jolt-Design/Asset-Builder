@@ -108,7 +108,7 @@ __metadata:
     mocha: "npm:^12.0.3"
     object-path: "npm:^0.11.8"
     q: "npm:^1.5.1"
-    traverse: "npm:^0.6.11"
+    traverse: "npm:^0.6.14"
   languageName: unknown
   linkType: soft
 
@@ -432,7 +432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-to-primitive@npm:^1.3.0":
+"es-to-primitive@npm:^1.3.0, es-to-primitive@npm:^1.3.4":
   version: 1.3.4
   resolution: "es-to-primitive@npm:1.3.4"
   dependencies:
@@ -1265,14 +1265,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"traverse@npm:^0.6.11":
-  version: 0.6.11
-  resolution: "traverse@npm:0.6.11"
+"traverse@npm:^0.6.14":
+  version: 0.6.14
+  resolution: "traverse@npm:0.6.14"
   dependencies:
+    define-data-property: "npm:^1.1.4"
+    es-to-primitive: "npm:^1.3.4"
     gopd: "npm:^1.2.0"
-    typedarray.prototype.slice: "npm:^1.0.5"
-    which-typed-array: "npm:^1.1.18"
-  checksum: 10c0/2b57662da3061ed2aa9977a6a3e315fc19f2cfdeb691700a88c12f4d460146abdb4d726740f47a9ca5fa84d3c50096b76ee50047d1a71c2afb168852ad264e36
+    typedarray.prototype.slice: "npm:^1.0.6"
+    which-typed-array: "npm:^1.1.24"
+  checksum: 10c0/2d12959cf0b3d6254036c96fff7ef92ec3c2886c79847a766398276031bf6926063528fcdac7eff75c528908c939caf2b98e22a49e0f82ae98b0063765cadeb4
   languageName: node
   linkType: hard
 
@@ -1300,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typed-array-byte-offset@npm:^1.0.4":
+"typed-array-byte-offset@npm:^1.0.4, typed-array-byte-offset@npm:^1.0.5":
   version: 1.0.5
   resolution: "typed-array-byte-offset@npm:1.0.5"
   dependencies:
@@ -1328,19 +1330,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedarray.prototype.slice@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "typedarray.prototype.slice@npm:1.0.5"
+"typedarray.prototype.slice@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "typedarray.prototype.slice@npm:1.0.6"
   dependencies:
-    call-bind: "npm:^1.0.8"
+    call-bind: "npm:^1.0.9"
     define-properties: "npm:^1.2.1"
-    es-abstract: "npm:^1.23.9"
+    es-abstract: "npm:^1.24.2"
     es-errors: "npm:^1.3.0"
     get-proto: "npm:^1.0.1"
     math-intrinsics: "npm:^1.1.0"
     typed-array-buffer: "npm:^1.0.3"
-    typed-array-byte-offset: "npm:^1.0.4"
-  checksum: 10c0/4995828640f8079cfbc9e3b4b8fc2e0eeb109edd1a2596806325ae07306dba1cd947e6ed6f63391aa7d5af0ea4f40fddf1b6eb863f8a59869a9dfc5dcfd8eac2
+    typed-array-byte-offset: "npm:^1.0.5"
+  checksum: 10c0/e35e80ccad4372db0d440674d578f53bfec0e62f6eafbc1f950f5c113d8a0abe4906e02d1081904a69ca35233c78f8742cf162e8f932229e78f11f20d0967739
   languageName: node
   linkType: hard
 
@@ -1402,7 +1404,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"which-typed-array@npm:^1.1.16, which-typed-array@npm:^1.1.18, which-typed-array@npm:^1.1.19":
+"which-typed-array@npm:^1.1.16, which-typed-array@npm:^1.1.19, which-typed-array@npm:^1.1.24":
   version: 1.1.24
   resolution: "which-typed-array@npm:1.1.24"
   dependencies:
