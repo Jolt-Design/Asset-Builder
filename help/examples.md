@@ -1,5 +1,4 @@
-Example Usage
-=============
+# Example Usage
 
 asset-builder works great with [gulp][]. But it can be used in pretty much any application where you need to combine a bunch of asset globs.
 
@@ -10,11 +9,12 @@ asset-builder works great with [gulp][]. But it can be used in pretty much any a
 ### Regular
 
 ```js
-gulp.src([
-  'bower_components/jquery/jquery.js',
-  'bower_components/bootstrap/component.js',
-  'assets/scripts/main.js'
-])
+gulp
+  .src([
+    'bower_components/jquery/jquery.js',
+    'bower_components/bootstrap/component.js',
+    'assets/scripts/main.js',
+  ])
   .pipe(concat('app.js'))
   .pipe(minify())
   .pipe(gulp.dest('dist'));
@@ -46,7 +46,8 @@ var manifest = require('asset-builder')('./assets/manifest.json');
 
 var app = manifest.getDependencyByName('app.js');
 
-gulp.src(app.globs)
+gulp
+  .src(app.globs)
   .pipe(concat(app.name))
   .pipe(minify())
   .pipe(gulp.dest(manifest.paths.dist));
@@ -73,23 +74,24 @@ The 20 regular pages have nothing to do with graphing. So on those pages d3 and 
 
 ```js
 gulp.task('js:main', function () {
-  return gulp.src([
-    'bower_components/jquery/jquery.js',
-    'bower_components/bootstrap/component.js',
-    'assets/scripts/main.js'
-  ])
+  return gulp
+    .src([
+      'bower_components/jquery/jquery.js',
+      'bower_components/bootstrap/component.js',
+      'assets/scripts/main.js',
+    ])
     .pipe(concat('app.js'))
     .pipe(minify())
     .pipe(gulp.dest('dist'));
 });
 
-
 gulp.task('js:graph', function () {
-  return gulp.src([
-    'bower_components/d3/d3.js',
-    'bower_components/nvd3/nvd3.js',
-    'assets/scripts/graphs.js'
-  ])
+  return gulp
+    .src([
+      'bower_components/d3/d3.js',
+      'bower_components/nvd3/nvd3.js',
+      'assets/scripts/graphs.js',
+    ])
     .pipe(concat('graph-page.js'))
     .pipe(minify())
     .pipe(gulp.dest('dist'));
@@ -123,17 +125,17 @@ gulp.task('js', ['js:main', 'js:graph']);
 ```js
 var manifest = require('asset-builder')('./assets/manifest.json');
 
-gulp.task('js', function() {
+gulp.task('js', function () {
   var merge = require('merge-stream');
-  manifest.forEachDependency('js', function(dep) {
+  manifest.forEachDependency('js', function (dep) {
     merge.add(
-      gulp.src(dep.globs, {base: 'scripts'})
+      gulp
+        .src(dep.globs, { base: 'scripts' })
         .pipe(concat(dep.name))
-        .pipe(minify())
+        .pipe(minify()),
     );
   });
-  return merge
-    .pipe(gulp.dest('dist'));
+  return merge.pipe(gulp.dest('dist'));
 });
 ```
 
@@ -149,12 +151,13 @@ gulp.task('js', function() {
 ### Regular
 
 ```js
-gulp.src([
-  'bower_components/jquery/jquery.js',
-  'bower_components/bootstrap/component.js',
-  '../../plugins/WordPress-plugin/scripts/plugin.js',
-  'assets/scripts/main.js'
-])
+gulp
+  .src([
+    'bower_components/jquery/jquery.js',
+    'bower_components/bootstrap/component.js',
+    '../../plugins/WordPress-plugin/scripts/plugin.js',
+    'assets/scripts/main.js',
+  ])
   .pipe(concat('app.js'))
   .pipe(minify())
   .pipe(gulp.dest('dist'));
@@ -189,7 +192,8 @@ var manifest = require('asset-builder')('./assets/manifest.json');
 
 var app = manifest.getDependencyByName('app.js');
 
-gulp.src(app.globs)
+gulp
+  .src(app.globs)
   .pipe(concat(app.name))
   .pipe(minify())
   .pipe(gulp.dest(manifest.paths.dist));

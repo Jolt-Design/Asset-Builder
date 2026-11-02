@@ -1,5 +1,4 @@
-asset-builder Manifest Spec 1.0
-=============
+# asset-builder Manifest Spec 1.0
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC2119][].
 
@@ -13,16 +12,11 @@ Following is a simple, minimal example of a `manifest.json`:
 {
   "dependencies": {
     "app.js": {
-      "files": [
-        "scripts/**/*",
-        "scripts/main.js"
-      ],
+      "files": ["scripts/**/*", "scripts/main.js"],
       "main": true
     },
     "main.css": {
-      "files": [
-        "styles/main.less"
-      ],
+      "files": ["styles/main.less"],
       "main": true
     },
     "modernizr.js": {
@@ -44,22 +38,16 @@ A more extensive `manifest.json` follows.
         "scripts/directives/**/*.js",
         "scripts/main.js"
       ],
-      "vendor": [
-        "../../plugins/example-plugin/assets/plugin.js"
-      ],
+      "vendor": ["../../plugins/example-plugin/assets/plugin.js"],
       "main": true
     },
     "main.css": {
       "files": "styles/main.less",
-      "vendor": [
-        "../../plugins/example-plugin/assets/style.css"
-      ],
+      "vendor": ["../../plugins/example-plugin/assets/style.css"],
       "main": true
     },
     "homepage.js": {
-      "files": [
-        "custom-dir/homepage.js"
-      ],
+      "files": ["custom-dir/homepage.js"],
       "external": true,
       "bower": ["slick-carousel"]
     },
@@ -93,7 +81,7 @@ A more extensive `manifest.json` follows.
 - `homepage.js` has also specified that it requires `slick-carousel` as a bower dependency. In this case `slick-carousel` will be excluded from being automatically included in `app.js` and will be included in `homepage.js`.
 - `main.css` in this case only has one file, so its `files` property can optionally be defined as a string.
 - A `fonts` and `images` dependency has been specified: if you do not include these properties explicitly they will be automatically added for you.
-- A path inside the *files* property such as `scripts/main.js` will be transformed to `assets/scripts/main.js` if your manifest's paths.source is `assets/` and the dependency's external property is not set to true. The *vendor* property paths are **relative to your project root**. If you are using gulp, this is typically where your gulpfile.js is located.
+- A path inside the _files_ property such as `scripts/main.js` will be transformed to `assets/scripts/main.js` if your manifest's paths.source is `assets/` and the dependency's external property is not set to true. The _vendor_ property paths are **relative to your project root**. If you are using gulp, this is typically where your gulpfile.js is located.
 
 ### Defaults
 
@@ -268,11 +256,11 @@ A more extensive `manifest.json` follows.
 
 ### Globs <a name="footnotes-globs"></a>
 
-* `man sh`
-* `man bash` (Search for "Pattern Matching")
-* `man 3 fnmatch`
-* `man 5 gitignore`
-* [minimatch][]
+- `man sh`
+- `man bash` (Search for "Pattern Matching")
+- `man 3 fnmatch`
+- `man 5 gitignore`
+- [minimatch][]
 
 ## References
 
