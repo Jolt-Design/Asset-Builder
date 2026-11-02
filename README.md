@@ -1,5 +1,4 @@
-[asset-builder](https://github.com/Jolt-Design/Asset-Builder/)
-=============
+# [asset-builder](https://github.com/Jolt-Design/Asset-Builder/)
 
 Fork of [asset-builder](http://use-asset-builder.austinpray.com/) without the Bower requirement.
 

@@ -4,7 +4,7 @@
 
 ### Some bower packages not being injected?
 
->I have had a bit of trouble with the wiredep / bower setup as it will bring in some of my "dependencies": but not all of them.
+> I have had a bit of trouble with the wiredep / bower setup as it will bring in some of my "dependencies": but not all of them.
 
 Solution: https://github.com/roots/roots/issues/1313#issuecomment-73735184
 
