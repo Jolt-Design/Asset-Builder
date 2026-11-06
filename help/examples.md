@@ -219,7 +219,6 @@ The `vendor` property is for third-party code you have no control over. You
 should not run project-specific linters, styleguide checkers, beautifiers, etc.
 on these files.
 
-
 #### Example
 
 This assumes your `path.source` is `assets/`. Assume a project structure such

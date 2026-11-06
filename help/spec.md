@@ -166,7 +166,6 @@ A more extensive `manifest.json` follows.
   </tbody>
 </table>
 
-
 ### Dependency Serialization <a name="serialization-dependency"></a>
 
 <table>
@@ -265,7 +264,6 @@ A more extensive `manifest.json` follows.
 ## References
 
 \[RFC4627\] Crockford, D., “The application/json Media Type for JavaScript Object Notation (JSON),” July 2006.
-
 
 [RFC2119]: https://www.ietf.org/rfc/rfc2119.txt
 [RFC4627]: http://www.ietf.org/rfc/rfc4627.txt
