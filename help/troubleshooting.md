@@ -29,6 +29,7 @@ Some bower packages do not have the correct metadata. To be automatically inject
 While overriding "paths" key inside `manifest.json` file you can't use any custom objects.
 
 Don't try to do:
+
 ```
 {
   "paths": {
