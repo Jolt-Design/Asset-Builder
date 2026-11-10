@@ -1,0 +1,2 @@
+[tools]
+node = { version = "26", postinstall = "npm install -g corepack", when = "always" }
