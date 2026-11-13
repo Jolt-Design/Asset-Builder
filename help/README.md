@@ -7,8 +7,8 @@
   of how to use asset-builder in your WordPress project's build process.
 - [Sage 8.0.0](https://github.com/roots/roots/blob/8.0.0/gulpfile.js) - good
   production WordPress example of advanced usage with gulp ([see their
-    manifest as
-    well](https://github.com/roots/roots/blob/8.0.0/assets/manifest.json))
+manifest as
+well](https://github.com/roots/roots/blob/8.0.0/assets/manifest.json))
 
 ## Troubleshooting
 
