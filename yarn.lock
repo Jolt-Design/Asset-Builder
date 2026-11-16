@@ -202,11 +202,11 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^5.0.12":
-  version: 5.0.12
-  resolution: "brace-expansion@npm:5.0.12"
+  version: 5.0.13
+  resolution: "brace-expansion@npm:5.0.13"
   dependencies:
     balanced-match: "npm:^4.0.2"
-  checksum: 10c0/a40ac64d3bdb5bb222456514d3633c1f627f03b844f509c69e70f98b78be0ce85e21b44bbfecdd0ddd4cc0855ca4242b41ea96ddccf88c7c3c7a84405474bb3a
+  checksum: 10c0/80420a1d567db7fa3214e2d49cd28ff8aa89dbb9a889bf3e449372dd72cdcec5267b451a5ff6fcaec1dd8819a88fb3d682e01c63812a8220881e305852b07f60
   languageName: node
   linkType: hard
 
@@ -1278,9 +1278,9 @@ __metadata:
   linkType: hard
 
 "strip-json-comments@npm:^5.0.3":
-  version: 5.0.3
-  resolution: "strip-json-comments@npm:5.0.3"
-  checksum: 10c0/daaf20b29f69fb51112698f4a9a662490dbb78d5baf6127c75a0a83c2ac6c078a8c0f74b389ad5e0519d6fc359c4a57cb9971b1ae201aef62ce45a13247791e0
+  version: 5.1.0
+  resolution: "strip-json-comments@npm:5.1.0"
+  checksum: 10c0/71d4d692bc5fd3a717787cfeae7cd0468c0607c2dd22c0e7ffbafad1bc71aa14c8f817cdcf6d0e217b670d386ce8f1451391fc4e880a3cd46b8f562b4c58aa34
   languageName: node
   linkType: hard
 
